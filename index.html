@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3187d7593f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="basic">
+                <p>competitive programmer</p>
+                <h1>Hii, I'm <span>Anshul Mishra</span><br>from gwalior</h1>
+                    
+            </div>
+        </div>
+    </div>
+   <!---About----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/prof.jpg">
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1> 
+                   <h2>Hey!</h2>
+                   <br>
+                   <p>My name is Anshul Mishra. I'm 18 years old and persuing Bachelor's of technology 
+                    in the field of computer science from Madhav institute of Technology & Science, Gwalior.</p>
+                    <br>
+                    <!--<p>Currently, am coding in C,C++ programming languages using OOPs and Data structures.
+                        I have also developed some web-pages using HTML,CSS & javascript.
+                        I'm much passionate about learning new things and interacting with peoples.
+                        I love public speaking.
+                    </p>-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                       
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Coding</span><br>Programming languages (C,C++) using OOPs, DSA </li>
+                            <li><span>Web development</span><br> Using HTML, CSS and javascript </li>
+                            <li><span>Educator</span><br>Teaching, Public Speaking</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-Present | B.Tech (CSE)</span><br>Madhav institute of Technology & Science, Gwalior</li>
+                            <li><span>2020-21 | XII (MP Board) </span><br> ST. SAI convent hr. sec. School</li>
+                            <li><span>2018-19 | X (MP Board) </span><br>ST. SAI convent hr. sec. School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Projects-->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="/work-1.jpg">
+                    <div class="layer">
+                        <h3>Leave-Management System</h3>
+                        <p>TOOL USED : C++ | OOPs <br> A system maintaining the statistic and record of leaves available for the employee and how 
+                            many have taken along with other details for a registered employee.</p>
+                            <a href="/Projects.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="/work-2.jpg">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>TOOL USED : HTML | CSS | Javascript <br> A mathematical calculator on a webpage that can perform mathematical expressions like as
+                            Add, Subtract, Multiply and divide etc.</p>
+                            <a href="/Projects.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="/work-3.webp">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>TOOL USED : HTML | CSS | Javascript <br> A responsive website that display persons profile details, Contact details,
+                        his projects etc.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+ <a href="/Projects.pdf" target="_blank" class="btn">GO TO PROJECTS</a>
+        </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> mishraanshul738@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (+91) 7489115001 </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anshul-mishra-106456234" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/anshul19_official/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/anshul_off?t=V6ocbPiTPL50REXiOh73pw&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://www.codechef.com/users/anshul_39" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    
+
+                </div>
+                <a href="/CV.pdf" download class="btn btn2">Download Resume</a>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg" ></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>This Portfolio is designed <i class="fa-solid fa-heart"></i> by Anshul Mishra</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+            
+        }
+        </script>
+        <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxe-_DjuzK7uOreJIaAIhaQmUEFit--FLVKRvRfaqEDWFWoFAnWLg2L720pXjP4m7LDGw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message sent Successfully! "
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
